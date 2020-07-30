@@ -1,0 +1,44 @@
+{
+  "name": "minelaup-server-backend",
+  "version": "0.9.1",
+  "private": true,
+  "description": "The server side of the project MineLaup.",
+  "scripts": {
+    "build": "node ace build",
+    "prod": "node ace serve",
+    "start": "node ace serve --watch",
+    "lint": "eslint . --ext=.ts",
+    "lint:fix": "eslint . --ext=.ts",
+    "build:css": "tailwindcss build ./resources/css/app.css -o public/css/app.css"
+  },
+  "author": "Bricklou",
+  "license": "gplv3",
+  "devDependencies": {
+    "@adonisjs/assembler": "^2.1.3",
+    "@types/hat": "0.0.1",
+    "adonis-preset-ts": "^1.0.4",
+    "eslint": "^7.5.0",
+    "eslint-plugin-adonis": "^1.0.14",
+    "pino-pretty": "^4.1.0",
+    "sqlite3": "^5.0.0",
+    "typescript": "^3.9.7",
+    "youch": "^2.0.10",
+    "youch-terminal": "^1.0.0"
+  },
+  "dependencies": {
+    "@adonisjs/ace": "^6.9.3",
+    "@adonisjs/auth": "^4.1.5",
+    "@adonisjs/core": "^5.0.0-preview-rc-1.6",
+    "@adonisjs/fold": "^6.3.5",
+    "@adonisjs/lucid": "^8.1.1",
+    "@adonisjs/mail": "^4.1.1",
+    "@adonisjs/session": "^3.0.3",
+    "@adonisjs/view": "^2.0.7",
+    "@poppinss/co-body": "git+https://github.com/thetutlage/co-body.git",
+    "hat": "0.0.3",
+    "proxy-addr": "^2.0.6",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.19",
+    "tailwindcss": "^1.5.2"
+  }
+}
